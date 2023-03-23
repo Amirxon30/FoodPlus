@@ -1,0 +1,330 @@
+@font-face {
+  font-family: Circe-regular;
+  src: url(../fonts/Circe-Regular.ttf);
+}
+@font-face {
+  font-family: Circe-bold;
+  src: url(../fonts/Circe-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.container header {
+  padding: 33px 300px;
+}
+.container header .navbar .profile {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 62px;
+  gap: 34px;
+}
+.container header .navbar .profile a {
+  font-family: Circe-regular;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+}
+.container header .navbar .top-navigation {
+  display: flex;
+  justify-content: center;
+}
+.container header .navbar .top-navigation ul {
+  display: flex;
+  gap: 40px;
+}
+.container header .navbar .top-navigation ul li {
+  list-style: none;
+}
+.container header .navbar .top-navigation ul li a {
+  text-decoration: none;
+  font-family: Circe-regular;
+  font-size: 16px;
+  color: #333333;
+}
+.container header .navbar .top-navigation ul li a:hover {
+  padding: 0px 0px 10px 0px;
+  border-bottom: 3px solid #B59571;
+}
+.container header .navbar .top-navigation ul li:first-child a {
+  padding: 0px 0px 10px 0px;
+  border-bottom: 3px solid #B59571;
+}
+.container header .navbar2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 120px;
+  height: 100vh;
+  padding: 30px 27px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #333333;
+}
+.container header .navbar2 .navbar2-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.container header .navbar2 .bottom ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+}
+.container header .navbar2 .bottom ul li {
+  list-style: none;
+}
+.container main {
+  padding: 33px 300px;
+}
+.container main .box {
+  display: flex;
+  gap: 134px;
+  justify-content: center;
+  margin-bottom: 162px;
+}
+.container main .box .left {
+  width: 416px;
+  height: 434px;
+}
+.container main .box .left .parent-img {
+  width: 416px;
+  height: 317px;
+  margin-bottom: 24px;
+  background-image: url(../media/parent.png);
+}
+.container main .box .left .child-imgs {
+  display: flex;
+  gap: 24px;
+}
+.container main .box .left .child-imgs .child {
+  width: 122px;
+  height: 93px;
+  background-image: url(../media/child.png);
+}
+.container main .box .right {
+  width: 306px;
+}
+.container main .box .right .food-name {
+  font-family: Circe-bold;
+  font-size: 32px;
+  color: #333333;
+  margin-bottom: 35px;
+}
+.container main .box .right .price {
+  margin: 35px 0px 30px 0px;
+  font-family: Circe-bold;
+  font-size: 32px;
+  color: #333333;
+}
+.container main .box .right .price span {
+  font-size: 16px;
+}
+.container main .box .right .quantity {
+  font-family: Circe-bold;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 24px;
+}
+.container main .box .right .order-holder {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.container main .box .right .order-holder #number {
+  font-family: Circe-bold;
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  padding: 14px 2px;
+}
+.container main .box .right .order-holder input[type=number]::-webkit-outer-spin-button {
+  background-color: blue;
+}
+.container main .box .right .order-holder .order-btn a {
+  padding: 15px 30px;
+  font-family: Circe-bold;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #B59571;
+}
+.container main .box .right .options-title {
+  margin: 35px 0px 30px 0px;
+  font-family: Circe-bold;
+  font-size: 32px;
+  color: #333333;
+}
+.container main .box .right .option-select {
+  display: flex;
+  gap: 29px;
+}
+.container main .box .right .option-select .option-left {
+  width: 253px;
+  font-family: Circe-bold;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.container main .box .right .option-select .option-left p {
+  font-family: Circe-bold;
+  font-size: 20px;
+  color: #333333;
+}
+.container main .box .right .option-select .check {
+  width: 24px;
+  height: 24px;
+}
+.container main .main-title {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-family: Circe-bold;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 80px;
+}
+.container main .main-title .border {
+  width: 60px;
+  height: 3px;
+  background-color: #B59571;
+}
+.container main .contacts {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.container main .contacts .contacts-left {
+  display: flex;
+  gap: 78px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 616px;
+  height: 375px;
+}
+.container main .contacts .contacts-left .left-box .left-box-title {
+  font-family: Circe-bold;
+  font-size: 64px;
+  color: #B59571;
+}
+.container main .contacts .contacts-left .left-box .left-box-title span {
+  margin-left: 15px;
+  font-family: Circe-bold;
+  font-size: 32px;
+  color: #B59571;
+}
+.container main .contacts .contacts-left .left-box .left-box-desc {
+  width: 180px;
+  font-family: Circe-regular;
+  font-size: 18px;
+  color: #333333;
+}
+.container main .contacts .contacts-right {
+  width: 746px;
+  height: 450px;
+  background-image: url(../media/map.png);
+}
+.container main .contacts .contacts-right .right-box {
+  margin: 40px 0px 0px -170px;
+  padding: 40px 44px;
+  width: 416px;
+  height: 349px;
+  background-color: #5B5B5B;
+}
+.container main .contacts .contacts-right .right-box .right-box-title {
+  margin-bottom: 20px;
+}
+.container main .contacts .contacts-right .right-box .right-box-title a {
+  margin-left: 19px;
+  text-decoration: none;
+  font-family: Circe-regular;
+  font-size: 16px;
+  color: #ffffff;
+}
+.container main .contacts .contacts-right .right-box .right-box-title2 {
+  font-family: Circe-bold;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.container main .contacts .contacts-right .right-box .right-box-title3 {
+  display: flex;
+  gap: 14px;
+  font-family: Circe-bold;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.container main .contacts .contacts-right .right-box .right-box-title3 p {
+  font-family: Circe-regular;
+  font-size: 18px;
+  color: #ffffff;
+}
+.container main .contacts .contacts-right .right-box .right-box-btns {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0px 30px 0px;
+}
+.container main .contacts .contacts-right .right-box .right-box-btns .right-box-btn1 a {
+  text-decoration: none;
+  font-family: Circe-bold;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #B59571;
+}
+.container main .contacts .contacts-right .right-box .right-box-btns .right-box-btn2 a {
+  text-decoration: none;
+  font-family: Circe-bold;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+}
+.container footer .footer-navbar {
+  width: 100%;
+  height: 120px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px 532px 34px 312px;
+}
+.container footer .footer-navbar .footer-text a {
+  text-decoration: none;
+  font-family: Circe-regular;
+  font-size: 16px;
+  color: #ffffff;
+}
+.container footer .footer-navbar .footer-payments ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.container footer .footer-navbar .footer-payments ul li {
+  list-style: none;
+}
+.container footer .footer-navbar .footer-payments ul li a {
+  text-decoration: none;
+}
+.container footer .footer-navbar .footer-link a {
+  text-decoration: none;
+  font-family: Circe-bold;
+  font-size: 16px;
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */
